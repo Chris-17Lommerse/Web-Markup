@@ -1,0 +1,15 @@
+#image {
+    border-radius: 25%;
+    width: 550px;
+    height: 300px;
+}
+
+#personal {
+    color: blue;
+    text-align: center;
+}
+
+#hobby {
+    color: green;
+    text-align: center;
+}
