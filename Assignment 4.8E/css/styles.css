@@ -1,9 +1,31 @@
 * 
 {
-    border: 0;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+body 
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#logo
+{
+    width: 100px;
+    margin-left: 50px
+}
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 20px;
 }
 
 #uphill-logo 
@@ -12,112 +34,188 @@
     height: 100px;
 }
 
-.nav-items a
+.nav-items ul
 {
-    color: black;
-    font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.nav-items ul li
+{
+    margin-right: 20px;
+}
+
+.nav-items ul li a
+{
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-items ul li a.green-button
+{
+    background-color: #68a832;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 5px;
+    height: 500px;
+}
+
+.main
+{
+    flex: 1;
 }
 
 .intro-section 
 {
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    align-content: space-around;
-    background-color: gold;
-    height: 350px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-right: 0;
+    background-color: #ffda74;
 }
 
-.intro-section img
+.intro-section article
 {
-    width: 600px;
-    height: 350px;
-}
-
-.intro-section p 
-{
-    background-color: gold;
-    color: rgb(30, 29, 29);
-    font-family: Arial, Helvetica, sans-serif;
-    height: 250px;
-    width: fit-content;
+    max-width: 50%;
 }
 
 .intro-section header
 {
-    background-color: gold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    background-color: #ffda74;
+    font-size: 55px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
-.green-button 
+.intro-section aside
 {
-    background-color: rgb(88, 140, 11);
+    max-width: 45%;
+}
+
+.intro-section img
+{
+    max-width: 100%;;
+    height: auto;
+}
+
+.intro-section p 
+{
+    margin-bottom: 30px;
+}
+
+.intro-section .green-button
+{
+    background-color: #68a832;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: max-content;
+    padding: 0.9rem;
 }
 
-.site-footer li
+.topics-section
 {
-    background-color: rgb(113, 102, 102);
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
 }
 
-.site-footer a
-{
-    background-color: rgb(113, 102, 102);
-    color: #fff;
-    display: flex;
-    justify-content: end;
-}
-
-.site-footer img
+.topics-section ul
 {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.topics-section ul li
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+.topics-section h1
+{
+    color: darkblue;
+    font-size: 15px;
+}
+.topics-section ul li img 
+{
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.topics-section ul li p
+{
+    margin-top: 10px;
+    text-align: start;
+}
+
+header.topics
+{
+    font-weight: bold;
+    margin: 0;
+    text-align: start;
+    background-color: white;
+}
+
+.site-footer
+{
+    background-color: #7a6d6d;
+    color: white;
+    padding: 10px 20px;
+}
+
+.site-footer ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+}
+
+.site-footer ul li img 
+{
+    width: 100px;
 }
 
 #copyright 
 {
-    display: flex;
-    justify-content: center;
-    align-items: first baseline;
+    font-size: 12px;
 }
 
-.topics-icons
+.site-footer ul li a
 {
-    width: 50px;
-    height: 50px;
+    text-decoration: none;
+    color: white;
 }
 
-
-
-.topics-section header
+@media (max-width: 768px)
 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
+    .intro-section 
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.topics-section h1
-{
-    font-family: Arial, Helvetica, sans-serif;
-    color: blue;
-    font-size: 15px;
-    text-align: center;
-}
+    .intro-section article, .intro-section aside
+    {
+        max-width: 100%;
+    }
 
-.topics-section h2 
-{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-}
+    .topics-section ul 
+    {
+        flex-direction: column;
+        align-items: center;
+    }
 
-.topics-section p
-{
-    font-family: Arial, Helvetica, sans-serif;
+    .topics-section ul li 
+    {
+        width: 90%;
+    }
 }
