@@ -6,6 +6,7 @@ body
     background-color: #702963;
 }
 
+/* h1 gets a background Rose Quartz */
 .header-text
 {
     background-color: #aa98a9;
@@ -19,4 +20,10 @@ body
 .header-text p
 {
     font-family: "Assistant";
+}
+
+.image
+{
+    width: 250px;
+    height: 250px;
 }
