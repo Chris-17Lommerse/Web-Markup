@@ -3,7 +3,7 @@
 
 body
 {
-    background-color: #702963;
+    background-color: white;
 }
 
 /* h1 gets a background Rose Quartz */
@@ -12,18 +12,28 @@ body
     background-color: #aa98a9;
 }
 
-.header-text h1
+.page-text h1
 {
     font-family: "Rubik";
+    letter-spacing: normal;
 }
 
-.header-text p
+.page-text p
 {
     font-family: "Assistant";
+    letter-spacing: normal;
+    line-height: 20px;
+    text-indent: 1em;
+    word-spacing: 0.1rem;
 }
 
 .image
 {
     width: 400px;
     height: 250px;
+}
+
+#uppercase 
+{
+    text-transform: uppercase;
 }

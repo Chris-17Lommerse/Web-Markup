@@ -4,19 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Chris Lommerse">
-    <meta name="description" content="Op deze pagina kan je met het contact formulier een vraag stellen of een opmerking maken aan een van de auto aanpassingsbedrijven">
+    <meta name="description"
+        content="Op deze pagina kan je met het contact formulier een vraag stellen of een opmerking maken aan een van de auto aanpassingsbedrijven">
     <meta name="keywords" content="Contact, Mobiel BV, Ellermeyer, B&S, Bierman">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="icon" type="image/webp" sizes="32x32" href="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp">
+    <link rel="icon" type="image/webp" sizes="32x32"
+        href="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp">
     <title>Contact</title>
 </head>
 
 <body>
     <header>
         <img class="logo"
-        src="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp"
-        title="Logo"
-        alt="Onbeperkt rijden logo">
+            src="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp"
+            title="Logo" alt="Onbeperkt rijden logo">
         <nav>
             <ul>
                 <li>
@@ -41,27 +42,44 @@
         </nav>
     </header>
     <main>
-                <header>
-                    <p>
-
-                    </p>
-                </header>
-                <form>
-                    
-                </form>
+        <header class="page-text">
+            <p>
+                Welkom op de contact pagina! U kunt op deze pagina uw vragen stellen aan de verschillende auto
+                aanpassingsbedrijven.
+            </p>
+        </header>
+        <form action="post">
+            <label for="radio">Aanhef bezoeker*</label>
+            <input type="radio" name="aanhef" value="Dhr.">
+            <label for="Dhr.">Dhr.</label>
+            <input type="radio" name="aanhef" value="Mevr.">
+            <label for="Mevr.">Mevr.</label>
+            <input type="radio" name="aanhef" value="Neutraal">
+            <label for="Neutraal">Neutraal</label>
+            <label for="text">Naam bezoeker*</label> 
+            <input type="text" class="form" name="Naam bezoeker" placeholder="Chris Lommerse" required>
+            <label for="email">E-mailadres bezoeker*</label>
+            <input type="email" class="form" name="email" placeholder="clom****@gmx.com" required>
+            <label for="tel">Telefoonnummer bezoeker</label>
+            <input type="tel" class="form" name="tel" placeholder="06 8675443536">
+            <label for="textarea">Vraag/Opmerking bezoeker*</label>
+            <input type="text" size="400" class="form" name="text" placeholder="Dit is een vraag" required>
+            <input type="submit" class="form" value="Verzenden" name="submit">
+            <legend>*= Verpicht invoerveld</legend>
+        </form>
     </main>
     <footer>
         <ul>
             <li>
-                <img class="logo" 
-                src="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp)" 
-                title="logo"
-                alt="Onbeperkt rijden logo">
+                <img class="logo"
+                    src="img/icons/DALL·E 2024-10-02 11.27.03 - A logo representing the idea that people with disabilities can drive. It features a sleek car silhouette with a universal accessibility symbol (wheelc.webp)"
+                    title="logo" alt="Onbeperkt rijden logo">
             </li>
             <li>
-                Onbeperkt Rijden &copy; 2024. 
-             </li>
+                Onbeperkt Rijden &copy; 2024.
+            </li>
         </ul>
     </footer>
 </body>
+
 </html>
