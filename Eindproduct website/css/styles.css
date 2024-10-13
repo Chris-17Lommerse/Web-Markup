@@ -3,7 +3,7 @@
 
 body
 {
-    background: var(--Primary, #863277);
+    background-color: white;
 }
 
 /* h1 gets a background Rose Quartz */
@@ -33,7 +33,35 @@ body
     height: 250px;
 }
 
+.page-text, h3
+{
+    font-family: "Rubik";
+}
+
 #uppercase 
 {
     text-transform: uppercase;
+}
+
+form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #b6a5b5;
+}
+
+form > .submit
+{
+    background-color: #FF8200;
+    border-style: double;
+    border-width: 0.5px;
+    border-color: #FF8200;
+}
+
+.submit:hover
+{
+    background-color: #ff6800;
+    transition: ease-out;
+    transition-duration: 300ms;
 }

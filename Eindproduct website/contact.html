@@ -50,11 +50,11 @@
         </header>
         <form action="post">
             <label for="radio">Aanhef bezoeker*</label>
-            <input type="radio" name="aanhef" value="Dhr.">
+            <input type="radio" name="aanhef" value="Dhr." class="aanhef">
             <label for="Dhr.">Dhr.</label>
-            <input type="radio" name="aanhef" value="Mevr.">
+            <input type="radio" name="aanhef" value="Mevr." class="aanhef">
             <label for="Mevr.">Mevr.</label>
-            <input type="radio" name="aanhef" value="Neutraal">
+            <input type="radio" name="aanhef" value="Neutraal" class="aanhef">
             <label for="Neutraal">Neutraal</label>
             <label for="text">Naam bezoeker*</label> 
             <input type="text" class="form" name="Naam bezoeker" placeholder="Chris Lommerse" required>
@@ -64,7 +64,16 @@
             <input type="tel" class="form" name="tel" placeholder="06 8675443536">
             <label for="textarea">Vraag/Opmerking bezoeker*</label>
             <input type="text" size="400" class="form" name="text" placeholder="Dit is een vraag" required>
-            <input type="submit" class="form" value="Verzenden" name="submit">
+            <label for="radio">Selecteer een autoaanpassingsbedrijf*</label>
+            <input type="radio" name="autoaanpassingsbedrijf">
+            <label for="B&S">B&S</label>
+            <input type="radio" name="autoaanpassingsbedrijf">
+            <label for="B&S">Ellermeyer</label>
+            <input type="radio" name="autoaanpassingsbedrijf">
+            <label for="B&S">Bierman</label>
+            <input type="radio" name="autoaanpassingsbedrijf">
+            <label for="B&S">Mobiel BV</label>
+            <input type="submit" class="submit" value="Verzenden" name="submit">
             <legend>*= Verpicht invoerveld</legend>
         </form>
     </main>
